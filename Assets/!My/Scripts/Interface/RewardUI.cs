@@ -13,13 +13,13 @@ public class RewardUI : MonoBehaviour
     // Инициализация UI с случайными данными награды.
     public void Init()
     {
-        Init(GData.CreateRandomRewardPreset());
+        Init(RewardsModel.CreateRandomRewardPreset());
     }
 
     // Инициализация UI с указанными данными награды.
     public void Init(RewardPreset rewardPresets)
     {
-        RewardModel model = GData.RewardModels[rewardPresets.Id];
+        RewardModel model = RewardsModel.RewardModels[rewardPresets.Id];
 
         // Установка иконки и её размера
         _icon.sprite = model.sprite;

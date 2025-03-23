@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public static class GData
+public static class RewardsModel
 {
     // Словарь наград
     public static Dictionary<string, RewardModel> RewardModels { get; private set; } = new Dictionary<string, RewardModel>();

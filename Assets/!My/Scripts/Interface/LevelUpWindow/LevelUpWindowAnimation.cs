@@ -95,27 +95,30 @@ public class LevelUpWindowAnimation : MonoBehaviour
 
     public void Close(bool soundAndAnimation = true)
     {
+        // Останавливаем все активные твины
+        KillTweens();
+
         // Деактивируем лучи и звезды
         _imageRays.gameObject.SetActive(false);
         _imageStars.gameObject.SetActive(false);
+
         if (soundAndAnimation)
         {
             // Изменяем альфа-канал для всех изображений на прозрачный
             ChangeAlpha(Color.clear);
 
-            // Запускаем анимацию закрытия окна
             _target.DOKill(true);
+            // Запускаем анимацию закрытия окна
             _target.transform.DOScale(Vector3.zero, _durationOpen)
                 .SetAutoKill()
                 .OnComplete(() =>
                 {
                     _target.gameObject.SetActive(false);
-                // Сбрасываем альфа-канал для всех _targetAlphaChange
-                BreakAlphaImage();
+                    // Сбрасываем альфа-канал для всех _targetAlphaChange
+                    BreakAlphaImage();
+                    // Удаляем все твины (на всякий случай)
+                    DOTween.KillAll(true);
                 });
-
-            // Останавливаем все активные твины
-            KillTweens();
 
             // Воспроизводим звук закрытия окна
             SoundManager.Instance.PlayCloseWindow();
@@ -215,6 +218,8 @@ public class LevelUpWindowAnimation : MonoBehaviour
     // Сбрасывает все визуальные эффекты.
     private void BreakAllVisual()
     {
+        KillTweens();
+
         // Сбрасываем масштаб
         _target.transform.localScale = Vector3.zero;
 
@@ -246,8 +251,8 @@ public class LevelUpWindowAnimation : MonoBehaviour
     // Останавливает все активные твины, которые не могут остановиться сами (напр. зацикленные)
     private void KillTweens()
     {
-        _imageRays.DOKill(false);
-        _imageStars.DOKill(false);
+        _imageRays.DOKill(true);
+        _imageStars.DOKill(true);
         _levelTmp.DOKill(true);
     }
 

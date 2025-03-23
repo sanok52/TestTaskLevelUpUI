@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 135599309}
   - component: {fileID: 135599308}
   m_Layer: 5
-  m_Name: woman
+  m_Name: WomanPNG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -819,7 +819,7 @@ GameObject:
   - component: {fileID: 475542424}
   - component: {fileID: 475542423}
   m_Layer: 5
-  m_Name: RoundedSquare
+  m_Name: LevelRoundedSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 496951769}
   - component: {fileID: 496951768}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (Claim)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 733813601}
   - component: {fileID: 733813600}
   m_Layer: 5
-  m_Name: window_background_lvl_up
+  m_Name: WindowBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2571,7 +2571,7 @@ GameObject:
   - component: {fileID: 1120681020}
   - component: {fileID: 1120681019}
   m_Layer: 5
-  m_Name: RoundedSquare
+  m_Name: RewardSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2802,7 +2802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248443145}
   m_Layer: 5
-  m_Name: LevelUp
+  m_Name: WindowContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2841,7 +2841,7 @@ GameObject:
   - component: {fileID: 1367603630}
   - component: {fileID: 1367603629}
   m_Layer: 5
-  m_Name: rays1
+  m_Name: Rays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3333,7 +3333,7 @@ GameObject:
   - component: {fileID: 1660634491}
   - component: {fileID: 1660634490}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (Get2x)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3467,7 +3467,7 @@ GameObject:
   - component: {fileID: 1713346330}
   - component: {fileID: 1713346329}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (reached)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3768,7 +3768,7 @@ GameObject:
   - component: {fileID: 1967186043}
   - component: {fileID: 1967186042}
   m_Layer: 5
-  m_Name: Image
+  m_Name: AdIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3843,7 +3843,7 @@ GameObject:
   - component: {fileID: 1982091562}
   - component: {fileID: 1982091561}
   m_Layer: 5
-  m_Name: stars
+  m_Name: Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4064,7 +4064,7 @@ GameObject:
   - component: {fileID: 2057594515}
   - component: {fileID: 2057594514}
   m_Layer: 5
-  m_Name: RoundedSquare
+  m_Name: TwoXSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

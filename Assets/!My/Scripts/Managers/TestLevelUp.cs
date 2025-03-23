@@ -8,7 +8,7 @@ public class TestLevelUp : MonoBehaviour
 
     private void Start()
     {
-        GData.SetRewardPresets(_rewardModels);
+        RewardsModel.SetRewardPresets(_rewardModels);
         _levelUpWindow.OnClickGetTwoX += () => Debug.Log("GET 2X");
         _levelUpWindow.OnClickClaim += () => Debug.Log("CLAIM");
         _levelUpWindow.gameObject.SetActive(true);
